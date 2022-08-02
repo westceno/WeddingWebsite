@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        /* Set the size of the div element that contains the map */
+    #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 50%;
+        /* The width is the width of the web page */
+        
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        text-align: center;
+        padding-top: 5%;
+        padding: 15px;
+            background-color: #fdfdfd;
+            margin: 20px 0px;
+            border-radius: 10px;
+            border: 1px solid #eee;
+            box-shadow: 0px 0px 8px 0px #d4d4d4;
+            transition: 0.5s;
+    }
+
+    </style>
+    <script>  
+        // Initialize and add the map
+        function initMap() {
+            const summit = { lat: 39.1588, lng: -84.4031 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: summit,
+            });
+            const marker = new google.maps.Marker({
+                position: summit,
+                map: map,
+            });
+        }
+            
+        window.initMap = initMap;
+    </script>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="Weston" />
+        <title>Vanche&Alex Wedding website</title>
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+        <!-- Navigation-->
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <a class="nav-link" href="./index.html">Home</a>
+                <a class="nav-link" href="./details.html">Details</a>
+                <a class="nav-link" href="#about">Registry</a>
+                <a class="nav-link" href="#team">FAQ</a>
+                <a class="nav-link" href="#contact">Photos</a>
+            </div>
+        </nav>
+    <body id="page-top">
+        <header class="normalHead" >
+            <div class="container">
+                <div class="normalHead-heading text-uppercase">Vanche & Alex</div>
+                <div class="normalHead-subheading">April 8th 2023</div>
+                <div class="normalHead-subsubheading">5:30pm Summit Hotel</div>
+                <div class="normalHead-subsubheading">Dress Code Cocktail</div>
+
+            </div>
+        </header>
+        <div>
+            <div  class="column">
+                <h1>Location</h1>
+                <p>5345 Medpace Way, Cincinnati, OH 45227</p>
+                <div id="map" style="margin-left:auto; margin-right:auto;"></div>
+            </div>
+            <div class="column">
+                <h1>Ceremony</h1>
+                <p>The ceremony will begin at 5:30pm, we ask all guests to arrive no later than 15 minutes before the ceremony. Reception to follow. </p>
+                <p>Please follow a Cocktail dress code and, of course, avoid wearing white and jeans.</p>
+            </div>
+            <div class="column">
+                <h1>Booking</h1>
+                <p>Guest accommodations can be made for a reduced rate at the Summit Hotel using the link below:</p>
+                <a href="https://book.passkey.com/go/0407RAINER" class="paragraph-style">https://book.passkey.com/go/0407RAINER</a>
+            </div>
+        </div>
+        
+    </body>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+</html>
