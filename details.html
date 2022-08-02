@@ -10,9 +10,16 @@
         
     }
 
+    .col-container {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 5%;
+    }
+
     .column {
+        display: table-cell;
         float: left;
-        width: 33.33%;
+        width: 100%;
         text-align: center;
         padding-top: 5%;
         padding: 15px;
@@ -57,11 +64,11 @@
         <!-- Navigation-->
         <nav class="navbar navbar-dark bg-dark">
             <div class="container">
+                <a class="nav-link" href="#about"></a>
                 <a class="nav-link" href="./index.html">Home</a>
+                <a class="nav-link" href="#team"></a>
                 <a class="nav-link" href="./details.html">Details</a>
-                <a class="nav-link" href="#about">Registry</a>
-                <a class="nav-link" href="#team">FAQ</a>
-                <a class="nav-link" href="#contact">Photos</a>
+                <a class="nav-link" href="#contact"></a>
             </div>
         </nav>
     <body id="page-top">
@@ -74,7 +81,7 @@
 
             </div>
         </header>
-        <div>
+        <div class="col-container">
             <div  class="column">
                 <h1>Location</h1>
                 <p>5345 Medpace Way, Cincinnati, OH 45227</p>
