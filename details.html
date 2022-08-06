@@ -25,10 +25,6 @@
         padding: 15px;
             background-color: #fdfdfd;
             margin: 20px 0px;
-            border-radius: 10px;
-            border: 1px solid #eee;
-            box-shadow: 0px 0px 8px 0px #d4d4d4;
-            transition: 0.5s;
     }
 
     </style>
@@ -85,23 +81,22 @@
             <div  class="column">
                 <h1>Location</h1>
                 <p>5345 Medpace Way, Cincinnati, OH 45227</p>
-                <div id="map" style="margin-left:auto; margin-right:auto;"></div>
+                <img
+                src="https://maps.googleapis.com/maps/api/staticmap?center=Summit+Hotel,Cincinnati,OH&zoom=11&size=500x400&maptype=roadmap
+                &markers=color:red%7CSummit+Hotel,Cincinnati,OH
+                &key=GOOGLEMAPSKEY"
+              />            
             </div>
             <div class="column">
                 <h1>Ceremony</h1>
-                <p>The ceremony will begin at 5:30pm, we ask all guests to arrive no later than 15 minutes before the ceremony. Reception to follow. </p>
-                <p>Please follow a Cocktail dress code and, of course, avoid wearing white and jeans.</p>
+                <p>The ceremony will begin at 5:30pm, we ask all guests to arrive no later than 15 minutes before the ceremony. Cocktail hour and reception to follow. </p>
+                <p>Please follow cocktail attire dresscode</p>
             </div>
             <div class="column">
                 <h1>Booking</h1>
-                <p>Guest accommodations can be made for a reduced rate at the Summit Hotel using the link below:</p>
+                <p>Guest accommodations can be made for a reduced rate by March 18th  at the Summit Hotel using the link below:</p>
                 <a href="https://book.passkey.com/go/0407RAINER" class="paragraph-style">https://book.passkey.com/go/0407RAINER</a>
             </div>
-        </div>
-        
+        </div>    
     </body>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-      defer
-    ></script>
 </html>
